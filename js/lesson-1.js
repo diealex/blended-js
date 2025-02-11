@@ -101,7 +101,7 @@ const login = prompt("Введіть ваш логін");
 if (login === "Адмін") {
   const password = prompt("Введіть ваш пароль");
   alert(password === "Я головний" ? "Добрий день!" : "Невірний пароль");
-} else alert(login === "" || login === null ? "Cancelled" : "Я вас не знаю");
+} else alert(login ? "Cancelled" : "Я вас не знаю");
 
 // Використайте цикл while, щоб вивести в console всі числа від 0 до 20 включно.
 // let a = 0;
